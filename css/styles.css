@@ -1299,6 +1299,7 @@ input[type="checkbox"]:checked + .privacy-label .privacy-span {
 @media (min-width:768px) and (max-width:1157px) {
     
     .container {
+        max-width: 768px;
         padding: 0 16px;
         margin: 0;
     }
