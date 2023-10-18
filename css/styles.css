@@ -1301,7 +1301,7 @@ input[type="checkbox"]:checked + .privacy-label .privacy-span {
     .container {
         max-width: 768px;
         padding: 0 16px;
-        margin: 0;
+        margin: 0 auto;
     }
 
     .container-header{
