@@ -946,8 +946,9 @@ input[type="checkbox"]:checked + .privacy-label .privacy-span {
     }
 
     .menu{
-        
-        min-height: 640px;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
         width: 100%;
         background-color: #FFFFFF;
         padding: 72px 16px 40px 16px;
@@ -957,7 +958,7 @@ input[type="checkbox"]:checked + .privacy-label .privacy-span {
         display: flex;
         flex-direction: column;
         gap: 40px;
-        margin-bottom: 120px;
+        margin-bottom: auto;
     }
 
     .nav-item{
@@ -965,13 +966,15 @@ input[type="checkbox"]:checked + .privacy-label .privacy-span {
         font-size: 36px;
         line-height: 1.11;
         letter-spacing: 0.02em;
-        text-transform: capitalize;
         font-weight: 700;
     }
 
-    .nav-item:hover, .nav-item:focus{
-        color:#404BBF;
-        transition: color 250ms;
+    .nav-item-blue{
+        color: #404BBF;
+        font-size: 36px;
+        line-height: 1.11;
+        letter-spacing: 0.02em;
+        font-weight: 700;
     }
 
     .menu-address{
@@ -981,7 +984,6 @@ input[type="checkbox"]:checked + .privacy-label .privacy-span {
     }
 
     .address-item{
-        
         font-size: 20px;
         font-weight: 500;
         line-height: 1.2;
@@ -990,12 +992,12 @@ input[type="checkbox"]:checked + .privacy-label .privacy-span {
         text-decoration: none;
     }
 
-    .mail-menu{
-        color: #2E2F42;
+    .mail-menu-blue{
+        color: #404BBF;
     }
 
-    .mail-menu:hover, .mail-menu:focus{
-        color:#404BBF;
+    .mail-menu{
+        color: #2E2F42;
     }
 
     .tel-menu{
@@ -1015,9 +1017,9 @@ input[type="checkbox"]:checked + .privacy-label .privacy-span {
     .menu-socitem {
         width: 40px;
         height: 40px;
-}
+    }
 
-.menu-soc-link {
+    .menu-soc-link {
         width: 100%;
         height: 100%;
         background-color: #4d5ae5;
@@ -1026,7 +1028,8 @@ input[type="checkbox"]:checked + .privacy-label .privacy-span {
         align-items: center;
         justify-content: center;
         transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+    }
+
     .close-btn-menu{
         position: absolute;
         top: 24px;
@@ -1108,8 +1111,8 @@ input[type="checkbox"]:checked + .privacy-label .privacy-span {
 
     .title {
         font-size:36px;
-        margin:0;
-        max-width:288px;
+        margin: 0 auto;
+        max-width: 200px;
     }
 
     .button {
@@ -1121,6 +1124,7 @@ input[type="checkbox"]:checked + .privacy-label .privacy-span {
         padding: 72px 0;
         display: flex;
         justify-content: center;
+
     }
 
     .section-list{
@@ -1295,9 +1299,12 @@ input[type="checkbox"]:checked + .privacy-label .privacy-span {
 @media (min-width:768px) and (max-width:1157px) {
     
     .container {
-        min-width: 768px;
         padding: 0 16px;
         margin: 0;
+    }
+
+    .container-header{
+        width: 100%;
     }
 
     .btn-menu{
@@ -1329,6 +1336,7 @@ input[type="checkbox"]:checked + .privacy-label .privacy-span {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    padding: 112px 0;
     }
 
     @media (min-device-pixel-ratio: 2),
@@ -1354,12 +1362,11 @@ input[type="checkbox"]:checked + .privacy-label .privacy-span {
     .section-list{
         flex-direction: row;
         flex-wrap: wrap;
-        gap: 24px;
+        gap: 72px 24px;
     }
 
     .section-part{
         flex-basis: calc((100% - 24px) / 2);
-        margin-bottom:48px;
     }
 
     .section-descr{
@@ -1422,15 +1429,16 @@ input[type="checkbox"]:checked + .privacy-label .privacy-span {
 
     .container-footer{
         flex-wrap: wrap;
-        max-width: 552px;
+        max-width: 584px;
         margin: 0 auto;
         gap: 72px 24px;
     }
 
     .footer{
-        min-width: 768px;
+        width: 100%;
         min-height: 456px;
         padding: 96px 0;
+        margin: 0 auto;
     }
 
     .footer-cont-logo{
