@@ -1351,7 +1351,7 @@ input[type="checkbox"]:checked + .privacy-label .privacy-span {
 }
 
     .section-text {
-        padding: 96px 0 48px 0;
+        padding: 96px 0;
     }
 
     .section-title{
